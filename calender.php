@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-        p{
-            text-align: center;
-            font-size: 100px;
-            font-family: Times ;
-            Margin-top: 38vh;
-        }
-    </style>
-</head>
+<?php
 
-<body>
-
+include 'includes/header.php';
+?>
 
 <?php
     $dayofweek = date('w');
