@@ -1,6 +1,7 @@
 <?php
 
 include 'includes/header.php';
+
 ?>
 <form> 
     <input type="text" name="num1" placeholder="Number 1">
