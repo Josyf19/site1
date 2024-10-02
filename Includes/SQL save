@@ -12,3 +12,18 @@ pellentesque ut turpis. Fusce vehicula est vitae nulla ultrices, nec aliquet ris
 varius, non vestibulum ante cursus. Duis eget lobortis turpis. Vivamus dictum non neque ut congue. Duis et eros
 accumsan, tincidunt tortor vitae, sollicitudin augue. Nulla at elit nec velit pretium viverra. Phasellus pulvinar massa
 eget magna volutpat, vitae sollicitudin lorem tincidunt.', '2024-9-26 8:29:01');
+
+
+create table users (
+user_id int(11) AUTO_INCREMENT PRIMARY KEY not null ,
+user_first varchar(256) not null,
+user_last varchar(256) not null,
+user_email varchar(256) not null,
+user_uid varchar(256) not null,
+user_pwd varchar(256) not null
+);
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+    VALUES ('Chayce', 'Anderson', 'chaycejosyf@gmail.com', 'Admin', 'chayce1234');
+
+ INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('Jane',  'Doe', 'jane@gmail.com', 'jane245a', 'test1234');
