@@ -8,4 +8,28 @@
 
 header("Location: ../index.php?signup=success");
     
+if (isset($_post['signup-submit']))  {
+
+}
+
+require 'dbh.inc.php';
+
+$username = $_POST['uid'];
+$email = $_POST['mail'];
+$password = $_POST['pwd'];
+$passwordRepeat = $_POST['pwd-repeat'];
+
+
+if (empty($username)) || $empty($username) || $empty($email) || $empty($password) || $empty($passwordRepeat) {
+header("location; ../signup.php?error=emptyfields&uid=".$username. "&mail=".$email);
+exit();
+}
+
+else if () {
+  header("location: ../signup.php?error=invalidmail&uid=".$username. "&mail=".$email);
+  exit();
+}
+
+
+
 ?>
