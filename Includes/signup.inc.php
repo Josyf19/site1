@@ -17,19 +17,31 @@ require 'dbh.inc.php';
 $username = $_POST['uid'];
 $email = $_POST['mail'];
 $password = $_POST['pwd'];
-$passwordRepeat = $_POST['pwd-repeat'];
+$passwordRepeat = $_POST['pwd-repeat'];   
 
 
-if (empty($username)) || $empty($username) || $empty($email) || $empty($password) || $empty($passwordRepeat) {
+if (empty($username)) || $empty($email) || $empty($password) || $empty($passwordRepeat) {
 header("location; ../signup.php?error=emptyfields&uid=".$username. "&mail=".$email);
 exit();
 }
-
-else if () {
-  header("location: ../signup.php?error=invalidmail&uid=".$username. "&mail=".$email);
+else if (!filter_var($email,  FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/",  $username)) {
+  header("location: ../signup.php?error=invalidmailuid");
+  exit();
+}
+else if (!filter_var($email,  FILTER_VALIDATE_EMAIL)) {
+header("location: ../signup.php?error=invalidmail&uid=".$username);
   exit();
 }
 
+else if (!preg_match("/^[a-zA-Z0-9]*$/",  $username)) {
+header("location: ../signup.php?error=invaliduid&mail=".$email);
+  exit();
+}
+else if  ($password !== $passwordRepeat) {
+  header("location: ../signup.php?error=passwordcheck&uid=".$username. "&mail=".$email);
+  exit();
+}
+else {
+  $sql = "SELECT uidUsers FROM users WHERE uidUsers =";
+}
 
-
-?>
