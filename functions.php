@@ -9,7 +9,7 @@ $x = 100;
 
 function newCalc($x) {
     $newnr = $x / 0.37;
-    echo "Here is 37% divded byy what you wrote:".$newnr;
+    echo "Here is 37% divded byyy what you wrote:".$newnr;
 }
 $x=100;
 newCalc($x);
