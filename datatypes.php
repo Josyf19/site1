@@ -19,7 +19,7 @@ include 'includes/header.php';
        
 
        //Array
-       $names = array("Chayce","Chris","Max");
+       $names = array("Chayce","Chris","bread");
          echo $names['2'];
   
   ?>
