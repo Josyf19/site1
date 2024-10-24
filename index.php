@@ -4,6 +4,15 @@ include 'includes/header.php';
 
 ?>
 
+<main>
+  <p>You are logged out </p>
+<p> you are logged in </p>
+
+
+   <main>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -26,6 +35,7 @@ include 'includes/header.php';
   <br>
   <button type="submit" name="submit">Sign up</button>
 </form>
+
 
 
 

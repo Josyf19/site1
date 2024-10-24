@@ -1,8 +1,12 @@
 <?php
- require "header.php";
+ require 'includes/header.php'; 
+
  ?> 
 
-   <main>
+<main>
+  
+
+
      <div class="wrapper-main">
         <section class="section-default">
             <h1>Signup</h1>
@@ -17,5 +21,5 @@
              </div>
            </main>
 <?php 
-      require "footer.php";
+      require "includes/footer.php";
       ?>
